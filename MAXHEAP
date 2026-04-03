@@ -1,0 +1,19 @@
+import java.util.PriorityQueue;
+import java.util.Collections;
+
+public class MaxHeapDemo {
+    public static void main(String[] args) {
+
+        PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Collections.reverseOrder());
+
+        maxHeap.add(10);
+        maxHeap.add(15);
+        maxHeap.add(3);
+        maxHeap.add(7);
+        maxHeap.add(20);
+
+        int max = maxHeap.poll(); 
+
+        System.out.println("Max-Heap Extract Max: " + max);
+    }
+}
